@@ -1,3 +1,4 @@
+target/*
 target/configure.bat
 target/configure.sh
 target/jcfpos.jar
@@ -3365,3 +3366,4 @@ target/reports/com/openbravo/reports/vouchers_messages.properties
 target/reports/com/openbravo/reports/vouchers.bs
 target/reports/com/openbravo/reports/vouchers.jrxml
 .vscode/settings.json
+target/classes/com/cafedev/api/config/SecurityConfig.class
