@@ -124,7 +124,7 @@ public class OrderPop extends Application {
     layout.setPrefHeight(300);
     layout.setPrefWidth(500);
 
-    stage.getIcons().add(new Image("/com/openbravo/images/jpos.png"));
+    stage.getIcons().add(new Image("/com/openbravo/images/cafepos.png"));
     stage.setTitle("Orders Waiting...");
     stage.setScene(new Scene(layout));
     stage.setAlwaysOnTop(true);

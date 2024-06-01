@@ -337,9 +337,9 @@ public class AppConfig implements AppProperties {
     m_propsconfig.setProperty("paper.standard.height", "698");
     m_propsconfig.setProperty("paper.standard.mediasizename", "A4");
 
-    m_propsconfig.setProperty("tkt.header1", "jPOS");
+    m_propsconfig.setProperty("tkt.header1", "CaFePOS");
     m_propsconfig.setProperty("tkt.header2", "Punto de Venta Táctil");
-    m_propsconfig.setProperty("tkt.header3", "jPos");
+    m_propsconfig.setProperty("tkt.header3", "CaFePos");
     m_propsconfig.setProperty("tkt.header4", "Cambie el encabezado en configuración");
 
     m_propsconfig.setProperty("tkt.footer1", "Cambie el pie de pagina en configuración");

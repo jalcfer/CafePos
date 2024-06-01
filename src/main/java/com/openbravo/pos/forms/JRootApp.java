@@ -518,14 +518,14 @@ public class JRootApp extends JPanel implements AppView, DeviceMonitorEventListe
     String newText = m_props.getProperty("start.text");
     if (newText != null) {
       if (newText.equals("")) {
-        jLabel1.setText("<html><center>jPOS - Punto de Venta Táctil<br>" +
-                "https://jpos.jcfapp.com/<br>" +
+        jLabel1.setText("<html><center>CaFePOS - Punto de Venta Táctil<br>" +
+                "https://cafepos.jcfapp.com/<br>" +
                 // "<br>" +
-                // "jPOS is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.<br>" +
+                // "CaFePOS is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.<br>" +
                 // "<br>" +
-                // "jPOS is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.<br>" +
+                // "CaFePOS is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU General Public License for more details.<br>" +
                 // "<br>" +
-                // "You should have received a copy of the GNU General Public License along with jPOS.  If not, see http://www.gnu.org/licenses/<br>" +
+                // "You should have received a copy of the GNU General Public License along with CaFePOS.  If not, see http://www.gnu.org/licenses/<br>" +
                 "</center>");
 
       } else {

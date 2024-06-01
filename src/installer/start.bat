@@ -22,4 +22,4 @@ REM
 
 
 
-start /B javaw -Dlogging.level=INFO -Xms256m -Xmx1024m -cp %CP% -splash:jPOS_splash_dark.png com.openbravo.pos.forms.StartPOS %1
+start /B javaw -Dlogging.level=INFO -Xms256m -Xmx1024m -cp %CP% -splash:cafePOS_splash_dark.png com.openbravo.pos.forms.StartPOS %1

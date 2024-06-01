@@ -716,7 +716,7 @@ CREATE UNIQUE INDEX SUPPLIERS_SKEY_INX ON suppliers(searchkey);
 CREATE INDEX SUPPLIERS_NAME_INX ON suppliers(name);
 
 -- ADD SUPPLIERS
-INSERT INTO suppliers(id, searchkey, name) VALUES ('0','jPos','jPos');
+INSERT INTO suppliers(id, searchkey, name) VALUES ('0','cafePos','cafePos');
 
 /* Header line. Object: vouchers. Script date: 08/05/2016 18:00:00. */
 CREATE TABLE uom (

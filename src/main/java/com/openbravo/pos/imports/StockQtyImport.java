@@ -133,7 +133,7 @@ public class StockQtyImport extends JPanel implements JPanelView {
       log.error(ex.getMessage());
     }
 
-// last used folder stored in jpos.properties
+// last used folder stored in cafepos.properties
     last_folder = props.getProperty("CSV.last_folder");
     config_file = props.getConfigFile();
 

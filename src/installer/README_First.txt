@@ -9,7 +9,7 @@ This version is 4.6
 
 uniCenta oPOS v4.6 includes Enhancements and Bug-Fixes.
 
-Please read the jpos_4.6_readme in the Release Notes folder.
+Please read the cafepos_4.6_readme in the Release Notes folder.
 
 Java JRE 8 runtime is required.
 The uniCenta oPOS installer now attempts to validate that Java JRE runtime is 

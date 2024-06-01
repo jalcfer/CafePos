@@ -71,7 +71,7 @@ public class AppViewConnection {
 
             if("true".equals(props.getProperty("db.multi"))) {
                 if (!Files.exists(Paths.get(filePath))) {
-                    ImageIcon icon = new ImageIcon("/com/openbravo/images/jpos.png");
+                    ImageIcon icon = new ImageIcon("/com/openbravo/images/cafepos.png");
                     Object[] dbs = {
                     "0 - " + props.getProperty("db.name"),
                     "1 - " + props.getProperty("db1.name")};

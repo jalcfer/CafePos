@@ -1,15 +1,15 @@
 [Desktop Entry]
 Version=4.2
 Encoding=UTF-8
-Name=uniCenta oPOS
+Name=CaFePOS
 Terminal=false
-Exec=jpos
-Icon=jpos
+Exec=cafepos
+Icon=cafepos
 Type=Application
 InitialPreference=6
 Categories=Application;Office;
 StartupNotify=false
-GenericName=uniCenta oPOS
-Comment=jPOS Punto de Venta Táctil
-Name[en_US]=jPOS
-GenericName[en_US]=jPOS
+GenericName=CaFePOS
+Comment=CaFePOS Punto de Venta Táctil
+Name[en_US]=CaFePOS
+GenericName[en_US]=CaFePOS

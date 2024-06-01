@@ -321,7 +321,7 @@ public final class Transfer extends JPanel implements JPanelView {
      */
 
     if ("true".equals(m_props.getProperty("db.multi"))) {
-      ImageIcon icon = new ImageIcon("/com/openbravo/images/jpos.png");
+      ImageIcon icon = new ImageIcon("/com/openbravo/images/cafepos.png");
       Object[] dbs = {
               "0 - " + m_props.getProperty("db.name"),
               "1 - " + m_props.getProperty("db1.name")};

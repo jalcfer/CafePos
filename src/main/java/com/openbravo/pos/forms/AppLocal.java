@@ -28,8 +28,8 @@ import com.openbravo.beans.LocaleResources;
 public class AppLocal {
 
 
-    public static final String APP_NAME = "jPOS";
-    public static final String APP_ID = "jpos";
+    public static final String APP_NAME = "CaFePOS";
+    public static final String APP_ID = "cafepos";
     public static final String APP_VERSION = "4.6.4";
 
     private static final LocaleResources m_resources;
