@@ -4,14 +4,12 @@
   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
-
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
     <version>2.5.6</version> <!-- Compatible con Java 8 -->
     <relativePath /> <!-- lookup parent from repository -->
   </parent>
-
   <groupId>com.jcfpos</groupId>
   <artifactId>jcfpos</artifactId>
   <version>4.6</version>
@@ -32,6 +30,48 @@
     <spring-boot.version>2.5.6</spring-boot.version>
   </properties>
   <dependencies>
+    <!-- Spring boot dependencies -->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter</artifactId>
+      <exclusions>
+        <exclusion>
+          <groupId>org.springframework.boot</groupId>
+          <artifactId>spring-boot-starter-logging</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-web</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-data-jpa</artifactId>
+      <exclusions>
+        <exclusion>
+          <groupId>javax.persistence</groupId>
+          <artifactId>javax.persistence-api</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-security</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-thymeleaf</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-actuator</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-test</artifactId>
+      <scope>test</scope>
+    </dependency>
     <dependency>
       <groupId>org.jfree</groupId>
       <artifactId>jcommon</artifactId>
@@ -184,18 +224,17 @@
       <version>10.10.2.0</version>
     </dependency>
     <!-- <dependency>
-      <groupId>xml-apis</groupId>
-      <artifactId>xml-apis</artifactId>
-      <version>1.0.b2</version>
-    </dependency> -->
-    <dependency>
       <groupId>io.posapps</groupId>
       <artifactId>posapps-client</artifactId>
       <version>1.4.6</version>
       <classifier>exe</classifier>
-    </dependency>
-    <!-- Batik Dependencies now wrapped included in apache xmlgraphics fop   -->
-    <!-- https://mvnrepository.com/artifact/org.apache.xmlgraphics/fop -->
+      <exclusions>
+        <exclusion>
+            <groupId>com.google.code.gson</groupId>
+            <artifactId>gson</artifactId>
+        </exclusion>
+      </exclusions>
+    </dependency> -->
     <dependency>
       <groupId>org.apache.xmlgraphics</groupId>
       <artifactId>fop</artifactId>
@@ -216,13 +255,11 @@
       <artifactId>ecj</artifactId>
       <version>4.6.1</version>
     </dependency>
-    <!-- Commercial version -->
     <dependency>
       <groupId>joda-time</groupId>
       <artifactId>joda-time</artifactId>
       <version>2.9.7</version>
     </dependency>
-    <!-- https://mvnrepository.com/artifact/de.sciss/weblaf -->
     <dependency>
       <groupId>de.sciss</groupId>
       <artifactId>weblaf</artifactId>
@@ -254,13 +291,6 @@
       <artifactId>jdatepicker</artifactId>
       <version>1.3.4</version>
     </dependency>
-    <!-- https://mvnrepository.com/artifact/com.sleepycat/je -->
-    <!-- <dependency>
-      <groupId>com.sleepycat</groupId>
-      <artifactId>je</artifactId>
-      <version>5.0.73</version>
-    </dependency> -->
-    <!-- Kotlin -->
     <dependency>
       <groupId>org.jetbrains.kotlin</groupId>
       <artifactId>kotlin-stdlib</artifactId>
@@ -301,47 +331,6 @@
       <version>3.5.3</version>
     </dependency>
     <!-- *****************cafedev3 ******************************* -->
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter</artifactId>
-      <exclusions>
-        <exclusion>
-          <groupId>org.springframework.boot</groupId>
-          <artifactId>spring-boot-starter-logging</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-web</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-data-jpa</artifactId>
-      <exclusions>
-        <exclusion>
-          <groupId>javax.persistence</groupId>
-          <artifactId>javax.persistence-api</artifactId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-security</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-thymeleaf</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-actuator</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-test</artifactId>
-      <scope>test</scope>
-    </dependency>
     <!-- https://mvnrepository.com/artifact/com.helger.ubl/ph-ubl-dian -->
     <dependency>
       <groupId>com.helger.ubl</groupId>
@@ -370,7 +359,6 @@
       <artifactId>kotlin-maven-noarg</artifactId>
       <version>${kotlin.version}</version>
     </dependency>
-
     <!-- Jersey Dependencies -->
     <dependency>
       <groupId>org.glassfish.jersey.core</groupId>
@@ -382,7 +370,6 @@
       <artifactId>jersey-container-servlet</artifactId>
       <version>${jersey.version}</version>
     </dependency>
-
     <!-- Dependencias de SLF4J -->
     <dependency>
       <groupId>org.slf4j</groupId>
@@ -393,6 +380,16 @@
       <groupId>javax.xml.bind</groupId>
       <artifactId>jaxb-api</artifactId>
       <version>2.3.0</version>
+    </dependency>
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-core</artifactId>
+      <version>4.1.4.Final</version>
+    </dependency>    
+    <dependency>
+      <groupId>org.hibernate</groupId>
+      <artifactId>hibernate-entitymanager</artifactId>
+      <version>5.2.3.Final</version>
     </dependency>
   </dependencies>
   <build>

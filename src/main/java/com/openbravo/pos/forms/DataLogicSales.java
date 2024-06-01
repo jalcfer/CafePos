@@ -42,7 +42,6 @@ import java.io.IOException;
 import java.util.Date;
 import java.util.List;
 import java.util.UUID;
-import java.util.logging.Logger;
 import java.io.File;
 
 /**
@@ -72,8 +71,6 @@ public class DataLogicSales extends BeanFactoryDataSingle {
     public static final String DEBT = "debt";
     public static final String DEBT_PAID = "debtpaid";
     protected static final String PREPAY = "prepay";
-    private static final Logger logger = Logger.getLogger("com.openbravo.pos.forms.DataLogicSales");
-
     private String getCardName;
     protected SentenceExec m_createCat;
     protected SentenceExec m_createSupp;

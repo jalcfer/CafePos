@@ -81,7 +81,6 @@ public class DataLogicSystem extends BeanFactoryDataSingle {
     protected SentenceExec m_lineremoved;
     protected SentenceExec m_ticketremoved;    
     
-    private String SQL;    
     private Map<String, byte[]> resourcescache;
     
     private SentenceList m_voucherlist;
